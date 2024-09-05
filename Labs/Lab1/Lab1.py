@@ -21,7 +21,7 @@ def dotProduct(x,y,n):
     dp = 0.
     for j in range(n):
         dp = dp + x[j]*y[j]
-    return dp
+    return dp #changing this file!
 
 
 driver()
