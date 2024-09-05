@@ -1,0 +1,1 @@
+This is a file repository for my APPM 4600 Numerical Methods class. Currently, only the files from Lab 1 are stored in there, however, as the class moves forward all of my files from homework and labs will be stored in this repository.
