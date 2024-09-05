@@ -1,1 +1,3 @@
-This is a file repository for my APPM 4600 Numerical Methods class. Currently, only the files from Lab 1 are stored in there, however, as the class moves forward all of my files from homework and labs will be stored in this repository.
+This is a file repository for my (Simon Abrahamse's) APPM 4600 Numerical Methods class. Currently, only the files from Lab 1 are stored in there, however, as the class moves forward all of my files from homework and labs will be stored in this repository. 
+The file structure is comprised of my 'Labs' and 'Homework' folders, which have subfolders in each of them for every lab or homework I will do in this class.
+NOTE: This is my first time using both Python and Github and I'm super happy to be learning this. I love coding and wish I did more in the Mechanical Engineering department, so please bear with me while I learn how to do this. Thank you for all of the help so far Logan.
