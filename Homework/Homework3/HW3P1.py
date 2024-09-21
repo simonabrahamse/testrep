@@ -11,10 +11,11 @@ def driver():
 
 # test f1 '''
      x0 = 0.0
-     [xstar,ier] = fixedpt(f1,x0,tol,Nmax)
+     [xstar,ier,count] = fixedpt(f1,x0,tol,Nmax)
      print('the approximate fixed point is:',xstar)
      print('f1(xstar):',f1(xstar))
      print('Error message reads:',ier)
+     print('Number of iterations required:',count)
 
 
 # define routines
@@ -31,12 +32,12 @@ def fixedpt(f,x0,tol,Nmax):
        if (abs(x1-x0) <tol):
           xstar = x1
           ier = 0
-          return [xstar,ier]
+          return [xstar,ier,count]
        x0 = x1
 
     xstar = x1
     ier = 1
-    return [xstar, ier]
+    return [xstar, ier,count]
     
 
 driver()
