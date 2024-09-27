@@ -19,7 +19,7 @@ def driver():
 def bisection(f,a,b,tol,maxiter):
 
     fa = f(a)
-    fb = f(b);
+    fb = f(b)
     if (fa*fb>0):
        ier = 1
        astar = a
