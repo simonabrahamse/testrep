@@ -23,7 +23,7 @@ def driver():
         if (norm(x1-x0) < tol):
            xstar = x1
            
-           print(xstar)
+           
            print('Number of iterations for part a:',j)
            print('solution for part a:',xstar)
            print('F(xstar)=',F)
@@ -34,10 +34,10 @@ def driver():
 
     x0 = np.array([1,1])
     [xstar2,ier,its] =  Newton(x0,tol,Nmax)
-    print(xstar2)
-    print('Newton: the error message reads:',ier) 
+    print('Solution for part b:',xstar2)
     print('Netwon: number of iterations is:',its)
-    print(xstar2)
+    print('F(xstar)=',evalF(xstar2))
+    
 
     
 
@@ -58,9 +58,9 @@ def evalF(x):
 def evalJ(x): 
 
     
-    J = np.array([[6.*x[0]**2, -2.*x[1]], 
-        [3*x[1]**2-3*x[0]**2, 6*x[0]*x[1]]])
-    return J
+    J = np.array([[ 6.*x[0] , -2.*x[1] ], 
+        [ 3*x[1]**2-3*x[0]**2 , 6*x[0]*x[1] ]])
+    return J 
 
 
 def Newton(x0,tol,Nmax):
