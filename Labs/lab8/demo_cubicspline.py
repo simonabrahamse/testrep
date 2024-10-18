@@ -51,6 +51,7 @@ def create_natural_spline(yint,xint,N):
     b = np.zeros(N+1)
 #  vector values
     h = np.zeros(N+1)
+    i = 1
     h[0] = xint[i]-xint[i-1]  
     for i in range(1,N):
        h[i] = xint[i+1] - xint[i]
@@ -105,8 +106,9 @@ def eval_local_spline(xeval,xi,xip,Mi,Mip,C,D):
 # Mip = M_{i+1}; Mi = M_i
 
     hi = xip-xi
-   
-    yeval = 
+    
+
+    yeval = (xip-xeval)**3/(6*hi)*Mi+(xeval-xi)**3*Mip/(6*hi)+C*(xip-xeval)+D(xeval-xi)
     return yeval 
     
     
