@@ -6,7 +6,7 @@ from scipy.integrate import quad
 
 def driver():
     w=lambda x: 1.
-    f = lambda x: math.exp(x)
+    f = lambda x: 1/(1+x**2)
     a=-1
     b=1
     n=2
