@@ -40,7 +40,9 @@ def driver():
     coeffsa = solve(A, b)
     print(coeffsa)
     coeffsb = solve(A_b,b)
+    print(coeffsb)
     coeffsc = solve(A_c,b)
+    print(coeffsc)
 
     x = np.linspace(0,5,100)
 
@@ -48,7 +50,7 @@ def driver():
     P = pade_approx(x,coeffsa)
     P2 = pade_approxb(x,coeffsb)
     P3 = pade_approxc(x,coeffsc)
-    T = x-x**6/6+x**5/120
+    T = x-x**3/6+x**5/120
 
     
     plt.plot(x, np.abs(y-P),'o', label='Pade approximation error')
